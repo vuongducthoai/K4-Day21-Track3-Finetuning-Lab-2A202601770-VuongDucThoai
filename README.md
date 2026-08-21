@@ -144,6 +144,22 @@ sau khi thấy kết quả sẽ làm hỏng toàn bộ phép so sánh.)
 
 ---
 
+## Ghi chú kết quả thực nghiệm
+
+### NB1 — Dữ liệu, chat template và loss mask
+
+- Môi trường chạy: CPU, model `Qwen/Qwen3.5-0.8B`.
+- Corpus gồm 250 mẫu; thống kê độ dài token: mean 93,1; p50 93; p95 98;
+  p99 100; lớn nhất 101 token.
+- Thống kê p95 gợi ý `max_length=256`. Lab vẫn giữ `max_length=512` theo cấu hình
+  của tier CPU để có thêm khoảng an toàn cho chat template và các mẫu dài hơn, đồng
+  thời không làm thay đổi cấu hình mặc định dùng để so sánh giữa các lần chạy.
+- Dữ liệu được chia cố định với `seed=42`: 225 mẫu train và 25 mẫu validation.
+- Các artefact NB1 đã được tạo và kiểm tra:
+  `results/template_check.json`, `results/mask_proof.json`,
+  `results/token_stats.json`, `data/split/train.jsonl` và
+  `data/split/val.jsonl`.
+
 ## Nộp bài
 
 Xem **[rubric.md](rubric.md)** — 100 điểm + tối đa 15 thưởng, ba lựa chọn định dạng nộp.

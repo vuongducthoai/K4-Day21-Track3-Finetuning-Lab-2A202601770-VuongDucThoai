@@ -1,0 +1,2 @@
+# Evaluation integrity hashes are byte-based; keep JSONL identical on every OS.
+data/*.jsonl text eol=lf

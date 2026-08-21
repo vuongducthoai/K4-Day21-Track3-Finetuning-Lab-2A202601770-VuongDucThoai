@@ -1,0 +1,10 @@
+{
+  "mask_mode": "assistant-only",
+  "n_supervised": 39,
+  "n_total": 94,
+  "supervised_fraction": 0.4149,
+  "answer_is_supervised": true,
+  "question_is_masked": true,
+  "supervised_preview": "</think>\n\n{\"intent\": \"doi_tra\", \"urgency\": \"trung_binh\", \"product\": \"balo laptop\", \"sentiment\": \"trung_tinh\"}<|im_end|>\n",
+  "masked_preview": "<|im_start|>system\nPhân loại ticket sau.<|im_end|>\n<|im_start|>user\nAlo shop, mình đặt balo laptop mã đơn VN411453. Cho tôi trả lại. Đã 3 ngày rồi. Cho tôi hỏi.<|im_end|>\n<|im_start|>assistant\n<think>\n\n"
+}

@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "open_tag_present": true,
+  "body_present": true,
+  "rendered": "<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n<think>\nbuoc 1: kiem tra. buoc 2: tra loi.\n</think>\n\n4<|im_end|>\n",
+  "verdict": "reasoning preserved — safe to train on traces"
+}
